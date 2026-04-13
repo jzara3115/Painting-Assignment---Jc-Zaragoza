@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdotsspan"> XXX </p>
+
+    <button type="button" id="Green">Green</button>
+    <button type="button" id="Red">Red</button>
+
+    <button type="button" id="ClearButton">Clear</button>
+    <p>
+
+    <button type="button" id="pointButton">Point</button>
+    <button type="button" id="triButton">Triangle</button>
+    <button type="button" id="circleButton">Circle</button>
+    <button type="button" id="drawMyPictureButton">Draw My Picture</button>
+    <button type="button" id="toggleReferenceButton">Show Reference Photo</button>
+
+    <p>
+    <img id="referenceImage" src="IMG_8252.jpeg" alt="Reference drawing" width="220" style="display:none; border:1px solid #444;">
+
+    <p>
+        Red <input type="range" id="redSlide" min="0" max="100" value="100" class="slider">
+    <p>
+        Green <input type="range" id="greenSlide" min="0" max="100" value="100" class="slider">
+    <p>
+        Blue <input type="range" id="blueSlide" min="0" max="100" value="100" class="slider">
+    <p>
+        Size <input type="range" id="sizeSlide" min="5" max="40" value="10" class="slider">
+    <p>
+      Segments <input type="range" id="segmentSlide" min="3" max="60" value="12" class="slider">
+
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="ColoredPoints.js"></script>
+  </body>
+</html>
