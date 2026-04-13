@@ -81,7 +81,7 @@ function addActionsForHtmlUI() {
     //Button Events
   document.getElementById('Green').onclick = function() { g_selectedColor = [0.0, 1.0, 0.0, 1.0]; };
   document.getElementById('Red').onclick = function() { g_selectedColor = [1.0, 0.0, 0.0, 1.0]; };
-  document.getElementById('ClearButton').onclick = function() { g_shapesList = []; RenderAllShapes(); };
+  document.getElementById('ClearButton').onclick = function() { g_shapesList = []; g_showManualPicture = false; RenderAllShapes(); };
 
   document.getElementById('pointButton').onclick = function() { g_selectedType = 'POINT'; };
   document.getElementById('triButton').onclick = function() { g_selectedType = 'TRIANGLE'; };
